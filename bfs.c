@@ -24,7 +24,9 @@ int main() {
      
     
     // make all vertex unvisited this function set all to a value - in strin.h
-    memset(visited, 0, sizeof(visited));
+    // memset(visited, 0, sizeof(visited));
+    for (i=0;i<N;i++) 
+		        visited[i]=0;
  
     // run bfs from 0th vertex
     bfs(0);
